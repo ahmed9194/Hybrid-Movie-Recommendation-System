@@ -15,8 +15,8 @@ from io import BytesIO
 @st.cache_data
 def load_data():
     # Load data with data cleaning
-    movies = pd.read_csv("C:/Users/user/Downloads/movies.csv")
-    ratings = pd.read_csv("C:/Users/user/Downloads/ratings.csv")
+    movies = pd.read_csv("movies.csv")
+    ratings = pd.read_csv("ratings.csv")
     
     # Data cleaning section
     with st.spinner('Cleaning data...'):
